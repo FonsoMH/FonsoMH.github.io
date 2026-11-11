@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <meta name="description" content="Portfolio de Alfonso Maldonado, estudiante de Ingeniería Informática en la UGR.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="logo" href="#home" aria-label="Inicio">
+      <span class="logo-mark">F</span>
+      <span class="logo-text">FonsoMH<small>Ing. Informática</small></span>
+    </a>
+
+    <nav id="menu" aria-label="Principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero wrap">
+      <p class="tag">Ingeniería Informática · UGR</p>
+      <h1>Hola, soy <mark>Alfonso</mark>.</h1>
+      <p class="hero-text">Disfruto del proceso de creación de software y estoy interesado
+        en aprender y masterizar tecnologías constantemente. Busco unas prácticas donde seguir creciendo como desarrollador.</p>
+      <div class="actions">
+        <a class="btn btn-lime" href="#proyectos">Ver proyectos</a>
+      </div>
+    </section>
+
+    <section id="proyectos" class="wrap">
+      <p class="tag tag-teal">Proyectos</p>
+      <h2>Lo que he hecho</h2>
+      <div class="cards">
+
+        <article class="card card-lime">
+          <div class="badges"><span class="badge">Proyecto en equipo</span></div>
+          <h3>Tiki Matemáticas</h3>
+          <p>App educativa de matemáticas creada por un equipo de 6 personas para un centro educativo. Es el proyecto de la asignatura Metodologías de Desarrollo Ágiles (UGR).</p>
+          <ul class="chips">
+            <li>React Native</li><li>Expo</li><li>Python</li><li>PostgreSQL</li><li>Docker</li>
+          </ul>
+          <div class="card-links">
+            <button class="btn btn-lime btn-sm" type="button" data-modal="caso-tiki">Caso de estudio</button>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/FonsoMH/MDA-DGP" target="_blank" rel="noopener">Ver código</a>
+          </div>
+        </article>
+
+        <article class="card card-pink">
+          <div class="badges"><span class="badge">Reto UGR × Unicaja</span></div>
+          <h3>Habla con tu dinero</h3>
+          <p>Asistente financiero que se maneja por voz o por texto. Un modelo de lenguaje local (Qwen2.5-7B con Ollama) consulta saldos, hace Bizums y convierte preguntas normales en consultas SQL.</p>
+          <ul class="chips">
+            <li>FastAPI</li><li>Ollama</li><li>SQLite</li><li>React Native</li><li>Expo</li><li>Tool calling</li><li>NL2SQL</li><li>Google STT</li><li>gTTS</li>
+          </ul>
+          <div class="card-links">
+            <button class="btn btn-pink btn-sm" type="button" data-modal="caso-dinero">Caso de estudio</button>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/FonsoMH/financial-ai-assistant" target="_blank" rel="noopener">Ver código</a>
+          </div>
+        </article>
+
+        <article class="card card-teal">
+          <div class="badges"><span class="badge">Proyecto en equipo</span><span class="badge badge-wip">En desarrollo</span></div>
+          <h3>TintoAhorro</h3>
+          <p>Sistema de gestión para una tintorería: registra clientes y tickets de prendas, controla el estado y el pago, y más funcionalidades. En desarrollo por un pequeño grupo.</p>
+          <ul class="chips">
+            <li>Angular</li><li>Spring Boot</li><li>Java 21</li><li>MySQL</li><li>Flyway</li><li>Docker</li>
+          </ul>
+          <div class="card-links">
+            <button class="btn btn-teal btn-sm" type="button" data-modal="caso-tinto">Caso de estudio</button>
+            <!-- Cuando tengas el repositorio, añade aquí el botón "Ver código" como en los otros proyectos -->
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="wrap">
+      <p class="tag tag-purple">Sobre mí</p>
+      <h2>Quién soy</h2>
+      <div class="about">
+        <p>Estoy finalizando mis estudios en Ingeniería Informática en la Universidad de Granada. Aún no tengo experiencia en empresa, por eso busco nuevas oportunidades en ese ámbito.</p>
+        <p>Lo que más me motiva es construir un proyecto de principio a fin: diseñar la arquitectura y programar tanto el backend como el frontend. En la carrera he reforzado mi base en algoritmos, estructuras de datos y diseño de software, y la he llevado a la práctica trabajando en equipo con metodologías ágiles. Ahora estoy aprendiendo Spring Boot y afianzando las herramientas que ya conozco.</p>
+      </div>
+
+      <div class="stack">
+        <div class="stack-box s-lime">
+          <h3>Lenguajes</h3>
+          <ul class="chips"><li>Python</li><li>Java</li><li>JavaScript</li><li>C</li><li>C++</li></ul>
+        </div>
+        <div class="stack-box s-pink">
+          <h3>Frontend y móvil</h3>
+          <ul class="chips"><li>Angular</li><li>React</li><li>React Native</li><li>Expo</li></ul>
+        </div>
+        <div class="stack-box s-teal">
+          <h3>Backend</h3>
+          <ul class="chips"><li>FastAPI</li><li>Spring Boot</li></ul>
+        </div>
+        <div class="stack-box s-purple">
+          <h3>Datos y herramientas</h3>
+          <ul class="chips"><li>MySQL</li><li>PostgreSQL</li><li>Docker</li><li>Git y GitHub</li><li>Metodologias Ágiles</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="wrap">
+      <p class="tag tag-lime">Contacto</p>
+      <h2>Hablemos</h2>
+      <p class="about">Busco prácticas o mi primera oportunidad como Software Engineer (full stack, IA o cualquier otro ámbito). Si tienes algo en mente, escríbeme.</p>
+
+      <div class="contact-list">
+        <a class="contact-row c-teal" href="https://github.com/FonsoMH" target="_blank" rel="noopener">
+          <span class="label">github</span>
+        </a>
+        <a class="contact-row c-purple" href="https://www.linkedin.com/in/alfonso-maldonado-herrero-62aa5a385/" target="_blank" rel="noopener">
+          <span class="label">linkedin</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">Diseñado y construido por Alfonso Maldonado <span id="year"></span> </footer>
+
+  <!-- MODAL: Tiki Matemáticas -->
+  <dialog class="modal m-lime" id="caso-tiki" aria-labelledby="caso-tiki-titulo">
+    <div class="modal-head">
+      <div>
+        <div class="badges"><span class="badge">Caso de estudio</span></div>
+        <h3 id="caso-tiki-titulo">Tiki Matemáticas</h3>
+      </div>
+      <button class="modal-close" type="button" data-close aria-label="Cerrar">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="demo" data-demo>
+        <h4>demo</h4>
+        <div class="demo-grid">
+          <figure class="demo-slot demo-video"><video src="assets/demos/tiki.mp4" controls muted playsinline preload="metadata"></video></figure>
+          <figure class="demo-slot"><img src="assets/demos/tiki-1.png" alt="Captura de Tiki Matemáticas, pantalla 1"></figure>
+          <figure class="demo-slot"><img src="assets/demos/tiki-2.png" alt="Captura de Tiki Matemáticas, pantalla 2"></figure>
+        </div>
+      </div>
+      <div>
+        <h4>Contexto</h4>
+        <p>Proyecto de la asignatura Metodologías de Desarrollo Ágiles del Grado en Ingeniería Informática (UGR), realizado en colaboración con un centro educativo.</p>
+      </div>
+      <div>
+        <h4>Qué es</h4>
+        <p>Una aplicación educativa de matemáticas, desarrollada por un equipo de 6 personas siguiendo metodologías ágiles.</p>
+      </div>
+      <div>
+        <h4>cómo está hecho</h4>
+        <ul class="list">
+          <li>Frontend en React Native con Expo.</li>
+          <li>Backend en Python con base de datos PostgreSQL.</li>
+          <li>Todo el conjunto orquestado con Docker.</li>
+        </ul>
+      </div>
+      <div class="modal-links">
+        <a class="btn btn-lime btn-sm" href="https://github.com/FonsoMH/MDA-DGP" target="_blank" rel="noopener">Ver código</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- MODAL: Habla con tu dinero -->
+  <dialog class="modal m-pink" id="caso-dinero" aria-labelledby="caso-dinero-titulo">
+    <div class="modal-head">
+      <div>
+        <div class="badges"><span class="badge">Caso de estudio</span></div>
+        <h3 id="caso-dinero-titulo">Habla con tu dinero</h3>
+      </div>
+      <button class="modal-close" type="button" data-close aria-label="Cerrar">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="demo" data-demo>
+        <h4>demo</h4>
+        <div class="demo-grid">
+          <figure class="demo-slot demo-video"><video src="assets/demos/dinero.mp4" controls muted playsinline preload="metadata"></video></figure>
+          <figure class="demo-slot"><img src="assets/demos/dinero-1.png" alt="Captura de Habla con tu dinero, pantalla 1"></figure>
+          <figure class="demo-slot"><img src="assets/demos/dinero-2.png" alt="Captura de Habla con tu dinero, pantalla 2"></figure>
+        </div>
+      </div>
+      <div>
+        <h4>Contexto</h4>
+        <p>Proyecto del reto de IA organizado por la UGR y Unicaja.</p>
+      </div>
+      <div>
+        <h4>Qué hace</h4>
+        <p>Es un asistente financiero conversacional que se maneja por voz o por texto. Puede consultar saldos, hacer Bizums y responder preguntas en lenguaje natural sobre los datos de la base de datos.</p>
+      </div>
+      <div>
+        <h4>Cómo funciona</h4>
+        <ul class="list">
+          <li>Backend en FastAPI.</li>
+          <li>Un modelo de lenguaje local, Qwen2.5-7B ejecutado con Ollama.</li>
+          <li>Tool calling: el modelo llama a funciones para consultar saldos o hacer Bizums.</li>
+          <li>NL2SQL: las preguntas en lenguaje natural se convierten en consultas SQL sobre una base de datos SQLite.</li>
+          <li>Frontend multiplataforma con React Native y Expo.</li>
+          <li>Transcripción de voz con Google STT y síntesis de voz con gTTS.</li>
+        </ul>
+      </div>
+      <div class="modal-links">
+        <a class="btn btn-pink btn-sm" href="https://github.com/FonsoMH/financial-ai-assistant" target="_blank" rel="noopener">Ver código</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- MODAL: TintoAhorro -->
+  <dialog class="modal m-teal" id="caso-tinto" aria-labelledby="caso-tinto-titulo">
+    <div class="modal-head">
+      <div>
+        <div class="badges"><span class="badge">Caso de estudio</span><span class="badge badge-wip">En desarrollo</span></div>
+        <h3 id="caso-tinto-titulo">TintoAhorro</h3>
+      </div>
+      <button class="modal-close" type="button" data-close aria-label="Cerrar">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="demo" data-demo>
+        <h4>demo</h4>
+        <div class="demo-grid">
+          <figure class="demo-slot demo-video"><video src="assets/demos/tintoahorro.mp4" controls muted playsinline preload="metadata"></video></figure>
+          <figure class="demo-slot"><img src="assets/demos/tintoahorro-1.png" alt="Captura de TintoAhorro, pantalla 1"></figure>
+          <figure class="demo-slot"><img src="assets/demos/tintoahorro-2.png" alt="Captura de TintoAhorro, pantalla 2"></figure>
+        </div>
+      </div>
+      <div>
+        <h4>Estado</h4>
+        <p>En desarrollo. De momento el repo está privado.</p>
+      </div>
+      <div>
+        <h4>Qué es</h4>
+        <p>Una aplicación para registrar los clientes y los tickets de una tintorería: prendas, precios. estado del trabajo, pago, impresión del ticket y más cosas. Construido por un equipo, mi función es principalmente el frontend, pero ayudo también en el backend.</p>
+      </div>
+      <div>
+        <h4>Funcionalidades previstas</h4>
+        <ul class="list">
+          <li>Clientes: alta, edición y búsqueda por teléfono.</li>
+          <li>Catálogo de tipos de prenda con sus precios base.</li>
+          <li>Tickets con varias líneas y cálculo automático del IGIC.</li>
+          <li>Estados (en proceso, listo, entregado) y registro del pago.</li>
+          <li>Histórico con filtros y ticket en PDF con QR.</li>
+          <li>Impresión en impresora térmica de 80 mm y envío por email.</li>
+          <li>Fotos de las prendas y alta de tickets hechos en papel.</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Cómo está hecho</h4>
+        <ul class="list">
+          <li>Frontend en Angular con Angular Material.</li>
+          <li>Backend en Java 21 con Spring Boot y Maven.</li>
+          <li>MySQL 8 en Docker, con el esquema versionado mediante migraciones Flyway.</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
